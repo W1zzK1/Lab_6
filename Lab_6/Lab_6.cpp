@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 using namespace std;
 /*
 12. Дано  вещественное  число A  и  целое  число  N > 0. 
@@ -15,11 +15,11 @@ int main()
 	cout << "Введите число N : ";
 	cin >> N;
 	float result = 1;
+	int i;
 
-	while (N > 0) {
-		N -= 1;
+	for (i = 1; i <= N; ++i)
 		result *= A;
-	}
+	
 	cout << result;
 	return 0;
 }
